@@ -14,16 +14,16 @@
         <div id="content" role="main">
           <img src="logo.png" alt="<epam>">
           <header>
-            <h1><strong>HTML Elements</strong></h1>
+            <h1><strong>HTML Elements</strong></h1><a id="Home"></a>
             <hr>
             <nav>
-              <a href=""><b>Home</b></a>
-              <a href=""><b>Headings</b></a>
-              <a href=""><b>Text formats</b></a>
-              <a href=""><b>Types of lists</b></a>
-              <a href=""><b>Table</b></a>
-              <a href=""><b>Blockquotes</b></a>
-              <a href=""><b>Registration</b></a>
+              <a href="#Home"><b>Home</b></a>
+              <a href="#Headings"><b>Headings</b></a>
+              <a href="#TextFormats"><b>Text formats</b></a>
+              <a href="#TypesOfLists"><b>Types of lists</b></a>
+              <a href="#Table"><b>Table</b></a>
+              <a href="#Blockquotes"><b>Blockquotes</b></a>
+              <a href="#Registration"><b>Registration</b></a>
             </nav>
             <hr>
           </header>
@@ -38,12 +38,12 @@
               Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
               <strong>I am strong.</strong></p>
             <p>Watch out for the abbreviations! <abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr
-                title="Cascading Style Sheets">CSS</abbr> are our tools.
-              <abbr title="JavaScript">JS</abbr> is a dynamically typed language. Mauris a ante. Suspendisse quam
-              sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
-              Praesent mattis, massa quis luctus fermentum. To copy a file type <kbd>COPY</kbd> <var>filename</var>.
-              <del>The meeting began at 7pm</del> <ins>Let’s make that 6pm.</ins>This <s>text</s> has been struck.</p>
+                title="Cascading Style Sheets">CSS</abbr> are our tools. <abbr title="JavaScript">JS</abbr> is a dynamically
+                 typed language. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi 
+                 imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum. To copy a file type <kbd>COPY</kbd>
+                  <var>filename</var>. <del>The meeting began at 7pm</del> <ins>Let’s make that 6pm.</ins>This <s>text</s> has been struck.</p>
             <hr>
+            <a id="Headings"></a>
             <p>h1 defines the most important heading. h6 defines the least important heading. Font-size for h1 is the
               same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside
               header</p>
@@ -54,7 +54,8 @@
             <h6>Heading 6</h6>
             <hr>
           </article>
-          <article>
+          <section>
+            <a id="TextFormats"></a>
             <h2>Text formats</h2>
             <h3>Article</h3>
             <article>
@@ -69,34 +70,38 @@ font, and it preserves
 both      <strong>spaces</strong> and
 <strong>line breaks</strong>
             </pre>
-            <h4>This is code</h4>
+            <h3>This is code</h3>
             <pre><code>
 .flex {
   display: flex;
   justify-content: justify;
   aliign-items: center;
 }
+
             </code></pre>
+            <a id="TypesOfLists"></a>
             <h2>Unordered Wish List</h2>
             <ul>
               <li>Iphone 11 pro max</li>
-              <li>Books:</li>
-              <ul>
-                <li>Clean code principles javascript</li>
-                <li>You don't know JS</li>
-                <li>Angular Pro</li>
-              </ul>
+              <li>Books:
+                <ul>
+                  <li>Clean code principles javascript</li>
+                  <li>You don't know JS</li>
+                  <li>Angular Pro</li>
+                </ul>
+              </li>
               <li>Headphones</li>
             </ul>
             <h2>Ordered Task List</h2>
             <ol>
               <li>Pay the bills</li>
               <li>Refuel the car</li>
-              <li>Finish homework</li>
+              <li>Finish homework
                 <ol>
                   <li>Create HTML page according to the requirements</li>
                   <li>Upload to the GitHub repository</li>
                 </ol>
+              </li>  
               <li>Enjoy your day</li>
             </ol>
             <h3>Definition List</h3>
@@ -108,43 +113,81 @@ both      <strong>spaces</strong> and
               <dt>JavaScript</dt>
                 <dd>JavaScript is a scripting languages, primarily used on the Web.</dd>
             </dl>
-            Select for learning
-            JS
-            HTML
-            CSS
-
-            Table
-            Skill
-            Training
-            City
-            JAVA
-            JAVA development training
-            Lviv
-            JAVASCRIPT
-            FRONT-END development
-            Kharkiv
-            IOS
-            IOS winter 2019
-            Kyiv
-            DEVOPS
-            DEVOPS spring 2020
-            Dnipro
-
-            Blockquotes
-            Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
-
-            "So if you want to go fast, if you want to get done quickly, if you want your code to be easy to write, make it easy to read."
-
-            Robert C. Martin (Uncle Bob)
-            <form>
-              Username:
-              Email:
-              Password:
-              Submit
+            <p>Select for learning
+            <select id="SelectForLearning">
+              <option value="JS">JS</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+            </select>
+            </p>
+            </section>
+            <hr>
+            <hr>
+            <section>
+            <a id="Table"></a>
+            <h2>Table</h2>
+              <table>
+              <tr>
+                <th>Skill</th>
+                <th>Training</th>
+                <th>City</th>
+              </tr>
+              <tr>
+                <td>JAVA</td>
+                <td>JAVA development training</td>
+                <td>Lviv</td>
+              </tr>
+              <tr>
+                <td>JAVASCRIPT</td>
+                <td>FRONT-END development</td>
+                <td>Kharkiv</td>
+              </tr>
+              <tr>
+                <td>IOS</td>
+                <td>IOS winter 2019</td>
+                <td>Kyiv</td>
+              </tr>
+              <tr>
+                <td>DEVOPS</td>
+                <td>DEVOPS spring 2020</td>
+                <td>Dnipro</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <a id="Blockquotes"></a>
+            <h2>Blockquotes</h2>
+            <p>
+              Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
+            </p>
+            <blockquote cite="">"So if you want to go fast, if you want to get done quickly, if you want your code to be easy to write, make it easy to read."
+              <p><a href="">Robert C. Martin (Uncle Bob)</a></p>
+            </blockquote>
+          </section>
+          <hr>
+            <a id="Registration"></a>
+            <form action="URL" method="POST">
+              <fieldset>
+                <label for="Username">Username: </label>
+                <input type="text" id="Username">
+              </fieldset>  
+              <fieldset>
+                <label for="Email">Email: </label>
+                <input type="text" id="Email">
+              </fieldset>
+              <fieldset>
+                <label for="Password">Password: </label>
+                <input type="text" id="Password">
+              </fieldset>
+              <fieldset>
+                <textarea cols="23" rows="3"></textarea>
+              </fieldset>
+              <fieldset>
+                <button type="submit">Submit</button>
+              </fieldset>
             </form>
-          </article>
           <footer>
-            © Copyright Epam Systems
+            &#9400; Copyright Epam Systems
           </footer>
         </div>
       </div>
