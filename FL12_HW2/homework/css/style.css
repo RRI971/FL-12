@@ -49,6 +49,12 @@
         text-align: center;
     }
 
+    .blocks p:nth-child(3) {
+        word-spacing: 10px;
+        letter-spacing: 5px;
+        font-style: oblique;
+    }
+
     .heading ol:nth-child(2) {
         list-style: none;
     }
@@ -181,6 +187,7 @@
     .blocks p:nth-child(3) {
         word-spacing: 10px;
         letter-spacing: 5px;
+        font-style: oblique;
     }
 
     li.box.box-work{
