@@ -39,6 +39,11 @@
         display: none;
     }
 
+    h2 { 
+        text-transform: uppercase;
+        font-weight: normal;
+       }
+    
     .tm-content-box.flex-2-col {
         align-content: center;
         justify-content: center;
